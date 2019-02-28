@@ -16,6 +16,6 @@ def quickSort():
             A[j+1] = A[j]
             j = j-1
         A[j+1] = key
-    print(A)
+    print("排序后 ",A)
     
 quickSort()    
