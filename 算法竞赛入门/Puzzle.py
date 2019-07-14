@@ -10,6 +10,12 @@
 @desc:
 '''
 
+
+'''
+思路：
+    定义网格的向量，表示网格元素的坐标
+    遍历指令集合，根据指令移动空格
+'''
 grid = [['' for i in range(5)] for j in range(5)]
 Gsize = 4
 class Vector():
