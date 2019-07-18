@@ -20,13 +20,20 @@ def guess(s,c):
     if n != -1:
         s = s.replace(c,'')
         bad = 0
-    if bad==1 : chance -= 1
-    if len(s) == 0: win = 1
-    if chance ==0: lose = 1
+    if bad==1 :
+        chance -= 1
+    if len(s) == 0:
+        win = 1
+    if chance ==0:
+        lose = 1
     return s
 
 def main():
     while True:
+        global chance,length,win,lose
+        chance = 6
+        length = -1
+        win = lose = 0
         num = input('游戏编号（-1结束）：')
         if num == '-1': break
         s = input('单词：')
